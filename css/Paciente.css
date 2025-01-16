@@ -1,0 +1,140 @@
+:root {
+    --blanco: #ffffff;
+    --negro: #1e1e1e;
+    --primario: #ff6b81;
+    --secundario: #ffeaea;
+    --bg-body: #fdfdfd;
+    --bg-nav: #ff3366;
+    --hover-nav: #ff8199;
+    --button-bg: #ff477e;
+    --button-hover-bg: #ff214f;
+    --text-color: #2c2c2c;
+    --text-muted: #555555;
+    --font-main: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--bg-body);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 3rem;
+    line-height: 1.6;
+}
+
+.hero {
+    background-color: var(--bg-nav);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.titulo {
+    color: var(--blanco);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form {
+    width: 100%;
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid var(--text-muted);
+    border-radius: 8px;
+    padding: 2rem;
+    background-color: var(--secundario);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-size: 2.4rem;
+    color: var(--primario);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--text-muted);
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: var(--button-bg);
+    color: var(--blanco);
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--button-hover-bg);
+    transform: scale(1.05);
+}
+
+.btn-back {
+    display: inline-block;
+    background-color: var(--hover-nav);
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 2rem;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-back:hover {
+    background-color: var(--button-hover-bg);
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    color: var(--text-muted);
+    font-size: 1.4rem;
+}
+
+footer p {
+    margin: 0;
+}

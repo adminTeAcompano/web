@@ -1,0 +1,208 @@
+:root {
+    --blanco: #ffffff;
+    --negro: #1e1e1e;
+    --primario: #ff6b81;
+    --secundario: #ffeaea;
+    --bg-body: #fdfdfd;
+    --bg-nav: #ff3366;
+    --hover-nav: #ff8199;
+    --button-bg: #ff477e;
+    --button-hover-bg: #ff214f;
+    --text-color: #2c2c2c;
+    --text-muted: #555555;
+    --font-main: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--bg-body);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+fieldset {
+    border: 1px solid var(--text-muted);
+    border-radius: 8px;
+    padding: 2rem;
+    background-color: var(--secundario);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-size: 2.4rem;
+    color: var(--primario);
+    font-weight: bold;
+}
+
+.volver_admin {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: var(--button-bg);
+    color: var(--blanco);
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.volver_admin:hover {
+    background-color: var(--button-hover-bg);
+    transform: scale(1.05);
+}
+
+/* Mejora del encabezado de la tabla donde están los botones antes de la tabla */
+.header-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.header-buttons a,
+.header-buttons button {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: var(--button-bg);
+    color: var(--blanco);
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.header-buttons a:hover,
+.header-buttons button:hover {
+    background-color: var(--button-hover-bg);
+    transform: scale(1.05);
+}
+
+.boton {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: var(--button-bg);
+    color: var(--blanco);
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton:hover {
+    background-color: var(--button-hover-bg);
+    transform: scale(1.05);
+}
+
+.volver {
+    position: relative;
+    margin-left: 71rem; /* Ajustar según necesidad */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background-color: var(--bg-body);
+    border: 1px solid var(--text-muted);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: var(--primario);
+    color: var(--blanco);
+}
+
+thead th {
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tbody tr {
+    border-bottom: 1px solid var(--text-muted);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--secundario);
+}
+/* Estilo para el botón Filtrar */
+#filtrar {
+    margin-top: 20px; /* Ajusta este valor según cuánto quieras mover el botón hacia abajo */
+}
+
+
+tbody tr:nth-child(odd) {
+    background-color: var(--bg-body);
+}
+
+tbody td {
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+tbody tr:hover {
+    background-color: var(--hover-nav);
+    color: var(--blanco);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Estilos específicos para los botones de "Mes" y "Trabajador" */
+select {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.6rem;
+    background-color: var(--secundario);
+    color: var(--text-color);
+    border: 1px solid var(--text-muted);
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%; /* Ajusta el tamaño al contenedor */
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+select:hover {
+    background-color: var(--hover-nav);
+    transform: scale(1.05);
+}
+
+select option {
+    background-color: var(--bg-body);
+    color: var(--text-color);
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+/* Estilo especial para la opción predeterminada "Todos" */
+select option[value="Todos"]:checked,
+select option[value="Todos"]:disabled {
+    color: var(--primario);
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Efecto hover para las opciones */
+select option:hover {
+    background-color: var(--primario);
+    color: var(--blanco);
+}
